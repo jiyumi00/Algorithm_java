@@ -1,16 +1,15 @@
-import java.util.Scanner;
-public class WordInSentence_03{
+import java.util.*;
+class WordInSentence_03{
 	public String solution(String sentence){
 		String maxWord="";
 		int max=0;
-		
-		String [] word=sentence.split(" ");
-		for(int i=0;i<word.length;i++){
-			if(max<word[i].length()){
-				max=word[i].length();
-				maxWord=word[i];
+		String[] word=sentence.split(" ");
+		for(String str:word){
+			if(max<str.length()){
+				max=str.length();
+				maxWord=str;
 			}
-		}
+		} 
 		return maxWord;
 	}
 	public static void main(String[]args){
