@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class CaseConversion_02{
+public class Main{
 	public static void main(String[]args){
 		Scanner scanner=new Scanner(System.in);
 		String word;

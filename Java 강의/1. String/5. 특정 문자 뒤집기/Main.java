@@ -1,7 +1,8 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class ReverseSpecialWord_05{
+public class Main
+{
 	public static boolean isAlphabet(String word,int i){
 		if(((int)word.charAt(i)>=65 && (int)word.charAt(i)<=90) || ((int)word.charAt(i)>=97 && (int)word.charAt(i)<=122)){
 			return true;

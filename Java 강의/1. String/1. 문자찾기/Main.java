@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.util.*;
-public class FindWord_01{
+public class Main{
 	public static int solution(String word,char letter){
 		int cnt=0;
 		word=word.toUpperCase();

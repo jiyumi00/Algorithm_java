@@ -1,5 +1,5 @@
 import java.util.*;
-class WordInSentence_03{
+class Main{
 	public String solution(String sentence){
 		String maxWord="";
 		int max=0;
@@ -13,7 +13,7 @@ class WordInSentence_03{
 		return maxWord;
 	}
 	public static void main(String[]args){
-		WordInSentence_03 ws=new WordInSentence_03();
+		Main ws=new Main();
 		Scanner scanner=new Scanner(System.in);
 		String sentence;
 		

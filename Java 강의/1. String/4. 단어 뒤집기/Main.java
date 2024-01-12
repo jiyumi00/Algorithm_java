@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class ReverseWord_04{
+public class Main{
 	public static void main(String[]args){
 		Scanner scanner=new Scanner(System.in);
 		int n,wordLength;
