@@ -18,9 +18,10 @@ public class Main{
 		if(b==1){//지수가 1이면
 			return a%c; 
 		}			
-		long ret=pow(a,b/2);
-		ret=(ret*ret)%c;
-		if(b%2==1) ret=(ret*a)%c; //지수가 홀수라면
-		return ret;
+		long ret=pow(a,b/2); //지수법칙 적용
+		
+		//모듈러 법칙 적용
+		if(b%2==1) return (ret*ret%c)*a%c; //지수가 홀수라면 a를 더 곱해준다
+		return (ret*ret)%c; 
 	}
 }

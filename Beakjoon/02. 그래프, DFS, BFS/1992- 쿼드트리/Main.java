@@ -1,12 +1,10 @@
 import java.util.*;
 import java.io.*;
-
 public class Main{
-	
 	static int map[][];
 	static int n;
 	static String str;
-	
+
 	static String quadTree(int y,int x,int size){
 		//size가 1일때 
 		if(size==1){ 
@@ -31,8 +29,6 @@ public class Main{
 		//모두 0 또는 모두 1일때
 		return Integer.toString(map[y][x]);
 	}
-	
-
 	public static void main(String[]args) throws IOException{
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 	
