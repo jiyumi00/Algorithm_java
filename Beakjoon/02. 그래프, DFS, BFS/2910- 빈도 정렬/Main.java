@@ -43,22 +43,20 @@ public class Main{
 		for(int i=0;i<cnts.size();i++){
 			for(int j=i+1;j<cnts.size();j++){
 				if(cnts.get(i)<cnts.get(j)){
-					cnts.remove(j);
 					cnts.add(i,cnts.get(j));
+					messages.add(i,messages.get(j));
+					cnts.remove(j+1);
+					messages.remove(j+1);
 				}
 			}
 		} 
-		for(int cntValue:cnts){
-			System.out.print(cntValue+" ");
-		}
-		/*
-		System.out.println();
+		
 		for(int i=0;i<messages.size();i++){
 			
 			for(int j=0;j<cnts.get(i);j++){
 				System.out.print(messages.get(i)+" ");
 			}
-		} */
+		}
 		
 	}
 }
