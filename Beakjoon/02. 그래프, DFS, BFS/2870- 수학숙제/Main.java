@@ -1,13 +1,13 @@
 import java.util.*;
 import java.io.*;
-
+import java.math.*;
 public class Main{
 	
-	public static void main(String[]args) throws IOException{
+	public static void main(String[] args)throws IOException{
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		int n;
 		String str,temp="";
-		ArrayList<String> list=new ArrayList<>();
+		ArrayList<BigInteger> list=new ArrayList<>();
 
 		n=Integer.parseInt(br.readLine());
 		
@@ -16,29 +16,26 @@ public class Main{
 			temp="";
 			for(int j=0;j<str.length();j++){
 				if(((int)str.charAt(j)>=97) && ((int)str.charAt(j)<=122)){
-					System.out.println("---문자----");
 					if(temp!=""){
-						list.add(temp);
+						list.add(new BigInteger(temp)); 
+						//Integer.parseInt 런타임 에러 (숫자 100자리 정수로 표현 불가)
 					}
 					temp="";
 				}
 				else{
-					System.out.println("---숫자---");
 					temp+=str.charAt(j);
-					System.out.println("temp:"+temp);
 				}
 			}
 			if(temp!=""){
-				list.add(temp);
+				list.add(new BigInteger(temp));
 			}
 		}
 		
-		System.out.println("ArrayList: ");
-	
-		for(String value:list){
-			System.out.print(value+" ");
+		Collections.sort(list);
+		for(BigInteger value:list){
+			System.out.println(value);
 		}
-		//string배열을 int로
+		
 		
 	}
 }
