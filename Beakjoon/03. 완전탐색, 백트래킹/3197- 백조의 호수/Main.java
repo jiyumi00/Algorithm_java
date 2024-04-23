@@ -73,7 +73,7 @@ public class Main{
 			String input=br.readLine();
 			for(int j=0;j<c;j++){
 				map[i][j]=input.charAt(j);
-				if(map[i][j]=='L'){
+				if(map[i][j]=='L'){ //하나의 swan 좌표
 					swanY=i;
 					swanX=j;
 				}

@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.*;
 import java.math.*;
 
-public class Main2{
+public class Main{
 	static ArrayList<Integer>[] adjList;
 	static int n,deleteNum;
 	static int root=-1;

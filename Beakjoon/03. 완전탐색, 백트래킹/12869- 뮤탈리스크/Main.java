@@ -42,7 +42,6 @@ public class Main{
 		}
 		return visited[0][0][0]-1;
 	} 
-
     public static void main(String[] args) throws IOException{
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		
@@ -51,7 +50,6 @@ public class Main{
 		for(int i=0;i<n;i++){
 			scv[i]=Integer.parseInt(input[i]);
 		}
-		
 		System.out.println(solve(scv[0],scv[1],scv[2]));
 	}
 }
